@@ -1,0 +1,11 @@
+@import './common/var.css';
+
+.yx-checkbox {
+  position: relative;
+  display: inline-block;
+  /* color: red; */
+    .active{
+      /* color: red; */
+    }
+  
+}

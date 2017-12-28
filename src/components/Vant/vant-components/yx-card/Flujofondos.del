@@ -1,0 +1,155 @@
+<template>
+  
+  <div>
+    <div>
+      <!-- <yx-flex></yx-flex> -->
+        <van-tabs type="card"  @click="handleTabClick">
+        <van-tab  v-for="item in tabs" :title='item' > </van-tab>
+        <!-- <div>
+        <button>左</button>
+        <button>右</button>
+      </div> -->
+      </van-tabs>
+      
+      <!-- <yx-flex>
+      <div style="float-left">
+        <yx-icon name="arrow" />
+      <yx-icon name="arrow" />
+      </div>
+      </yx-flex> -->
+    </div>
+       
+      <!-- <button>左</button> <button>右</button>  -->
+  </div>
+</template>
+<script> 
+import { format,isFirstDayOfWeek, lastDayOfWeek,startOfMonth,lastDayOfMonth,addDays,subDays,addWeeks,subWeeks,addMonths,subMonths} from 'date-fns'
+let today = new Date();
+export default {
+  data(){
+    return {
+       tabs:['日','周','月'],
+       start:format(today, 'YYYY-MM-DD'),
+       end:'2017-12-18'
+    }
+  },
+  methods:{
+    handleTabClick(tab){  
+       debugger;
+       switch (tab) {
+         case 0:
+          this.end = format(today, 'YYYY-MM-DD')
+         break
+
+         case 1:
+          let _lastWeek = lastDayOfWeek(today);
+          this.end = format(_lastWeek,'YYYY-MM-DD')
+          this.start = format(subDays(_lastWeek,7),'YYYY-MM-DD') //startOfWeek
+         break
+
+         case 2:
+         
+          this.start = format(startOfMonth(today),'YYYY-MM-DD')
+          this.end = format(today, 'YYYY-MM-DD')
+         break
+       }
+      this.$emit('change',{start:this.start,end:this.end,type:this.tabs[tab]})
+    }
+  }
+}
+</script>
+<style lang='postcss'>
+.van-card {
+  font-size: 16px;
+  background: #ffffff;
+  position: relative;
+  box-sizing: border-box;
+  margin: 10px;
+  
+  &__header {
+    &__title {
+      color:#5f5f5f;
+    }
+    &__button {
+      color:#7ec2f3;
+    }
+    &__botomtime {
+      width: 100%;
+      height: 30px;
+      // border-bottom: 1px solid #999;
+      color:#999;
+      text-align:right;
+      font-size:12px;
+      margin-top: 8px;
+    }
+    .momento{
+      border:1px solid #3b85e8;
+      border-radius: 6px;
+      color:#3b85e8;
+    }
+    .momento button:nth-of-type(2){
+      border-left:1px solid #3b85e8;
+      border-right:1px solid #3b85e8;
+      border-radius: 0 !important;
+    }
+    .izquierdo{
+      color:#3b85e8;
+    }
+    .van-tabs__nav--card .van-tab {
+      padding: 0 14px 0 12px ;
+      line-height: 28px;
+    }
+    .van-tabs__nav--card {
+      margin: 0 10px;
+      border: none;
+    }
+    .van-tabs__nav--card .van-tab.van-tab--active {
+      background-color: #3b85e8;
+      color: #fff;
+      border: 1px solid #3b85e8;
+    }
+    .van-tabs__nav--card .van-tab.van-tab--active:last-child {
+      border-right: 1px solid #3b85e8;
+    }
+    .van-tabs__nav--card .van-tab {
+      color: #9ea2a3;
+      line-height: 28px;
+      border-right: 1px solid #9ea2a3;
+    }
+    .van-tab {
+      border: 1px solid #9ea2a3;
+      border-radius: 4px;
+      margin-right: 2px;
+    }
+    .van-tabs__nav--card .van-tab:last-child {
+      border-right: 1px solid #9ea2a3;
+      margin-right:0px;
+    }
+
+      .van-card__header__right {
+          width:200px;
+      }
+   
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+}
+</style>
+
+
+
+
+

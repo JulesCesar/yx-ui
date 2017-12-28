@@ -1,0 +1,73 @@
+@import './common/var.css';
+
+.yx-tagmini {
+  display: inline-block;
+  /* line-height: 14px; */
+  /* padding: 1px 5px; */
+  /* border-radius: 2px; */
+  font-size: 8px;
+  /* background: $gray; */
+  /* color: $whiteblue; */
+  
+ 
+
+  &::after {
+    /* border-color: $gray; */
+    border-radius: 4px;
+  }
+
+  &.is-plain {
+    background: $white;
+    color: $gray;
+  }
+
+  &.is-mark {
+    border-radius: 0 8px 8px 0;
+
+    &::after {
+      border-radius: 0 16px 16px 0;
+    }
+  }
+
+  &--success {
+    background: $green;
+
+    &::after {
+      border-color: $green;
+    }
+
+    &.is-plain {
+      color: $green;
+    }
+  }
+
+  &--danger {
+    /* background:#; */
+
+    &::after {
+      /* border-color: $button-danger-background-color; */
+    }
+
+    &.is-plain {
+      color: $button-danger-background-color;
+    }
+  }
+
+  &--primary {
+    background: $white;
+    color:$blue;
+    /* border: 1px solid $blue; */
+    vertical-align: super;
+    position: absolute;
+    top: -2px;
+    right: -56px;
+
+    &::after {
+      /* border-color: $blue; */
+    }
+
+    &.is-plain {
+      color: $blue;
+    }
+  }
+}

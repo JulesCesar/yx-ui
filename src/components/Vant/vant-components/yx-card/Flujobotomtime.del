@@ -1,0 +1,57 @@
+<template>
+  <div class="clearfix">
+    
+    <p class="header_botomtime">时间： 2017-11-12 至 2017-11-18</p>
+  </div>
+</template>
+<style lang='postcss'>
+  .van-card {
+      font-size: 16px;
+      background: #ffffff;
+      position: relative;
+      box-sizing: border-box;
+      padding: 10px;
+      margin: 10px;
+
+      &__header {
+        &__title {
+          color:#5f5f5f;
+        }
+        &__button {
+          color:#7ec2f3;
+        }
+        &__botomtime {
+          width: 100%;
+          height: 30px;
+          color:#999;
+          text-align:right;
+          font-size:12px;
+          margin-top: 8px;
+        }
+        .momento{
+          border:1px solid #3b85e8;
+          border-radius: 6px;
+          color:#3b85e8;
+          margin-right: 10px;
+        }
+        .momento button:nth-of-type(2){
+          border-left:1px solid #3b85e8;
+          border-right:1px solid #3b85e8;
+          border-radius: 0 !important;
+        }
+        .van-card__header__right button {
+            height: 20px;
+            width: 30px; 
+            line-height: 20px;
+            border: none;
+            background-color: #fff;
+            font-size: 10px;
+        }
+      }
+  }
+</style>
+
+
+
+
+

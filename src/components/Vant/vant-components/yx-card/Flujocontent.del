@@ -1,0 +1,30 @@
+<template>
+  <div class="clearfix">
+  </div>
+ 
+</template>
+<style lang='postcss'>
+.van-card {
+  font-size: 16px;
+  background: #ffffff;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+
+
+    &__content{
+      border-bottom: 1px solid #999;
+      padding:8px 0 8px 0;
+      margin-bottom:8px;
+    }
+  
+
+
+}
+</style>
+
+
+
+
+
