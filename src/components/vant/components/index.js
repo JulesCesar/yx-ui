@@ -17,7 +17,7 @@ import ContactEdit from './contact-edit';
 import ContactList from './contact-list';
 import CouponCell from './coupon-cell';
 import CouponList from './coupon-list';
-import DatetimePicker from './datetime-picker';
+// import DatetimePicker from './datetime-picker';
 import Dialog from './dialog';
 import Field from './field';
 import GoodsAction from './goods-action';
@@ -32,7 +32,7 @@ import NoticeBar from './notice-bar';
 import NumberKeyboard from './number-keyboard';
 import Panel from './panel';
 import PasswordInput from './password-input';
-import Picker from './picker';
+// import Picker from './picker';
 import Popup from './popup';
 import Progress from './progress';
 import PullRefresh from './pull-refresh';
@@ -59,16 +59,16 @@ import TreeSelect from './tree-select';
 import Uploader from './uploader';
 import Waterfall from './waterfall';
 import Num from './number';
-import YxCard from './yx-card';
-import YxFlex from './yx-flex';
-import YxLista from './yx-lista';
-import YxTestbutton from './yx-testbutton';
-import YxTagmini from './yx-tagmini';
-import YxIcon from './yx-icon';
-import YxDetalles from './yx-detalles';
-import YxPequena from './yx-pequena';
-import YxPagination from './yx-pagination';
-import Yxloading from './yx-loading';
+// import YxCard from './yx-card';
+// import YxFlex from './yx-flex';
+// import YxLista from './yx-lista';
+// import YxTestbutton from './yx-testbutton';
+// import YxTagmini from './yx-tagmini';
+// import YxIcon from './yx-icon';
+// import YxDetalles from './yx-detalles';
+// import YxPequena from './yx-pequena';
+// import YxPagination from './yx-pagination';
+// import Yxloading from './yx-loading';
 
 const version = '0.10.8';
 const components = [
@@ -91,7 +91,7 @@ const components = [
   ContactList,
   CouponCell,
   CouponList,
-  DatetimePicker,
+  // DatetimePicker,
   Field,
   GoodsAction,
   GoodsActionBigBtn,
@@ -104,7 +104,7 @@ const components = [
   Panel,
   YxPagination,
   PasswordInput,
-  Picker,
+  // Picker,
   Popup,
   Progress,
   PullRefresh,
@@ -129,15 +129,15 @@ const components = [
   TreeSelect,
   Uploader,
   Num,
-  YxCard,
-  YxFlex,
-  YxLista,
-  YxTestbutton,
-  YxTagmini,
-  YxIcon,
-  YxDetalles,
-  YxPequena,
-  Yxloading
+  // YxCard,
+  // YxFlex,
+  // YxLista,
+  // YxTestbutton,
+  // YxTagmini,
+  // YxIcon,
+  // YxDetalles,
+  // YxPequena,
+  // Yxloading
 ];
 
 const install = function(Vue) {
@@ -146,8 +146,8 @@ const install = function(Vue) {
   components.forEach(component => {
     Vue.component(component.name, component);
   });
-  Vue.$dialog = Vue.prototype.$dialog = Dialog;
-  Vue.$toast = Vue.prototype.$toast = Toast;
+  // Vue.$dialog = Vue.prototype.$dialog = Dialog;
+  // Vue.$toast = Vue.prototype.$toast = Toast;
 };
 
 /* istanbul ignore if */
@@ -177,7 +177,7 @@ export {
   ContactList,
   CouponCell,
   CouponList,
-  DatetimePicker,
+  // DatetimePicker,
   Dialog,
   Field,
   GoodsAction,
@@ -193,7 +193,7 @@ export {
   Panel,
   YxPagination,
   PasswordInput,
-  Picker,
+  // Picker,
   Popup,
   Progress,
   PullRefresh,
@@ -220,15 +220,15 @@ export {
   Uploader,
   Waterfall,
   Num,
-  YxCard,
-  YxFlex,
-  YxLista,
-  YxTestbutton,
-  YxTagmini,
-  YxIcon,
-  YxDetalles,
-  YxPequena,
-  Yxloading
+  // YxCard,
+  // YxFlex,
+  // YxLista,
+  // YxTestbutton,
+  // YxTagmini,
+  // YxIcon,
+  // YxDetalles,
+  // YxPequena,
+  // Yxloading
 };
 export default {
   install,

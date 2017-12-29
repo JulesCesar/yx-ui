@@ -2,14 +2,15 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './app.vue';
 import yixinglabUI from '../src/index';
-// import zUI from '../src/components/vant/vant-components';
-import yxUI from '../src/components/yx-ui/components';
+import zUI from '../src/components/vant';
+import '../src/components/vant/style/lib/index.css';
+// import yxUI from '../src/components/yx-ui/components';
 
 
 Vue.use(VueRouter);
 Vue.use(yixinglabUI);
-// Vue.use(zUI)
-Vue.use(yxUI);
+Vue.use(zUI)
+// Vue.use(yxUI);
 
 // 开启debug模式
 Vue.config.debug = true;
@@ -18,8 +19,8 @@ Vue.config.debug = true;
 const router = new VueRouter({
     routes: [
         {
-            path: '/cards',
-            component: require('./routers/ui/cards')
+            path: '/vanttest',
+            component: require('./routers/vant/tabs_test.vue')
         },
         {
             path: '/dashboardtest',
