@@ -11,6 +11,7 @@ li + li { border-left: solid 1px #bbb; padding-left: 10px; margin-left: 10px; }
     <div class="container">
         <nav>
             <ul>
+                <!-- <li><router-link to="/cards">cards</router-link></li> -->
                 <li><router-link to="/dashboardtest">流向图dashboardtest</router-link></li>
                 <li><router-link to="/dashboardtest2">流向图2dashboardtest</router-link></li>
                 <li><router-link to="/dualcurvetest">双轴曲线图dashboardtest</router-link></li>

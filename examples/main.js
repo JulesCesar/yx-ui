@@ -2,10 +2,14 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './app.vue';
 import yixinglabUI from '../src/index';
+// import zUI from '../src/components/vant/vant-components';
+import yxUI from '../src/components/yx-ui/components';
 
 
 Vue.use(VueRouter);
 Vue.use(yixinglabUI);
+// Vue.use(zUI)
+Vue.use(yxUI);
 
 // 开启debug模式
 Vue.config.debug = true;
@@ -13,6 +17,10 @@ Vue.config.debug = true;
 // 路由配置
 const router = new VueRouter({
     routes: [
+        {
+            path: '/cards',
+            component: require('./routers/ui/cards')
+        },
         {
             path: '/dashboardtest',
             component: require('./routers/dashboard_test.vue')

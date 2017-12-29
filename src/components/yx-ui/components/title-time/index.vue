@@ -33,8 +33,7 @@
       </div>
     </div>  
 </template> <!--  @click="fun($event)" -->
-<script>
-import moment from 'moment';
+<script> 
 
 export default {
   name: 'yx-time', 
