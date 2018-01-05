@@ -43,44 +43,57 @@
                     name: 'Chart', 
                 }],
                 menuData2: [{
-                    name: 'subnav 1',
+                    name: '卡片',
                     icon: 'user',
                     expand: true,
                     children: [{
-                        name: 'option1',
+                        name: 'yx-card',
                         selected: true
                     },{
-                        name: 'option2'
+                        name: 'yx-card-details'
                     },{
-                        name: 'option3'
-                    },{
-                        name: 'option4'
+                        name: 'yx-card-chart'
                     }]
                 },{
-                    name: 'subnav 2',
+                    name: '按钮',
                     icon: 'laptop',
                     children: [{
-                        name: 'option5'
+                        name: 'yx-tags-button'
                     },{
-                        name: 'option6'
+                        name: 'yx-date-button'
                     },{
-                        name: 'option7'
-                    },{
-                        name: 'option8'
+                        name: 'yx-sort-button'
                     }]
                 },{
-                    name: 'subnav 3',
+                    name: '对象',
                     icon: 'notification',
                     children: [{
-                        name: 'option9'
+                        name: 'yx-moneyflow'
                     },{
-                        name: 'option10'
+                        name: 'yx-accounts'
                     },{
-                        name: 'option11'
-                    },{
-                        name: 'option12'
+                        name: 'yx-contacts'
                     }]
-                }]
+                },
+                {
+                    name: '列表',
+                    icon: 'notification',
+                    children: [{
+                        name: 'yx-list'
+                    },{
+                        name: 'yx-checkbox-list'
+                    },]
+                },
+                {
+                    name: '时间',
+                    icon: 'notification',
+                    children: [{
+                        name: 'yx-date-range'
+                    }]
+                }
+                
+                
+                ]
             }
         }
     }
