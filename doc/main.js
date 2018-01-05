@@ -6,6 +6,11 @@ import zUI from '../src/components/vant';
 import '../src/components/vant/style/lib/index.css';
 import yxUI from '../src/components/yx-ui/components';
 
+import 'vue-beauty/package/style/vue-beauty.min.css'
+
+import vueBeauty from 'vue-beauty'
+Vue.use(vueBeauty)
+
 
 Vue.use(VueRouter);
 Vue.use(yixinglabUI);
@@ -20,35 +25,35 @@ const router = new VueRouter({
     routes: [
         {
             path: '/yxtest',
-            component: require('./routers/ui/cards.vue')
+            component: require('./pages/ui/cards.vue')
         },
         {
             path: '/vanttest',
-            component: require('./routers/vant/tabs_test.vue')
+            component: require('./pages/vant/tabs_test.vue')
         },
         {
             path: '/dashboardtest',
-            component: require('./routers/dashboard_test.vue')
+            component: require('./pages/dashboard_test.vue')
         },
         {
             path: '/dashboardtest2',
-            component: require('./routers/dashboard_test2.vue')
+            component: require('./pages/dashboard_test2.vue')
         },
         {
             path: '/dualcurvetest',
-            component: require('./routers/dualcurve_test.vue')
+            component: require('./pages/dualcurve_test.vue')
         },
         {
             path: '/barchart_twodirection',
-            component: require('./routers/barTwoDirection_test.vue')
+            component: require('./pages/barTwoDirection_test.vue')
         },
         {
             path: '/bubbleAnimateChartstest',
-            component: require('./routers/bubbleAnimateCharts_test.vue')
+            component: require('./pages/bubbleAnimateCharts_test.vue')
         },
         {
             path: '/datatable_test',
-            component: require('./routers/datatable_test.vue')
+            component: require('./pages/datatable_test.vue')
         }
     ]
 });
